@@ -260,7 +260,7 @@ collect2: error: ld returned 1 exit status
 
 第三方模块的定义放在头文件 .h 文件中，第三方功能模块的所有定义放在静态链接库 .a 文件中
 
-![大型项目编译过程](C:\Users\19021\Pictures\大型项目编译过程.png)
+![大型项目编译过程](https://github.com/TheFuture1sNow/C--Primer-Plus-notes/blob/main/%E5%A4%A7%E5%9E%8B%E9%A1%B9%E7%9B%AE%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B.png)
 
 对于大项目，一个程序往往由很多个目标文件链接生成，现在假设在原来的源代码中添加一个减法函数
 
