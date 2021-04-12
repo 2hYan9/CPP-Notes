@@ -1,2 +1,3 @@
 # C++-Primer-Plus-notes
-reading notes of the "C++ Primer Plus"
+the reading notes of the *C++ Primer Plus*
+reader of this notes need some C foundation
