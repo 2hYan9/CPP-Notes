@@ -1,6 +1,5 @@
-# C++ Primer Plus. I
-
 [toc]
+# C++ Primer Plus. I
 
 ### CH00. 模块编译过程
 
