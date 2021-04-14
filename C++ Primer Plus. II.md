@@ -1052,7 +1052,7 @@ int foom(){
 
    ```C++
    namespace my_very_favorite_things {...};
-   namespcae mvft = my_very_favorite_things;
+   namespace mvft = my_very_favorite_things;
    ```
 
 4. 可以通过省略名称空间的名称来创建未命名的名称空间
