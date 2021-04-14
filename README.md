@@ -10,8 +10,8 @@ The file [C++ Primer Plus I.md](./C++%20Primer%20Plus.%20I.md) is mainly introdu
 - CH04: Complex variable types and some storage types  
 
 The file [C++ Primer Plus II.md](./C++%20Primer%20Plus.%20II.md) talks about some feature of the C++. Contains these following contents:
-- CH05: 
-- CH06: 
-- CH07: 
-- CH08: 
-- CH09: 
+- CH05: Get input by 'cin' object with loop structure
+- CH06: Some simple file IO cases
+- CH07: Take array or pointer as arguement in Function
+- CH08: Some advanced knowledge about the function in C++
+- CH09: The storage model in C++, and some details about namespace
