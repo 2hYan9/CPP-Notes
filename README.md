@@ -9,9 +9,9 @@ The file [C++ Primer Plus I.md](./C++%20Primer%20Plus.%20I.md) is mainly introdu
 - CH03: Basic variable types and the *const* identifier 
 - CH04: Complex variable types and some storage types  
 
-The file [C++ Primer Plus II.md](./C++%20Primer%20Plus.%20II.md) is mainly talk about some feature of the C++. Contains these following contents:
-- CH05:
-- CH06:
-- CH07:
-- CH08:
-- CH09:
+The file [C++ Primer Plus II.md](./C++%20Primer%20Plus.%20II.md) talks about some feature of the C++. Contains these following contents:
+- CH05: 
+- CH06: 
+- CH07: 
+- CH08: 
+- CH09: 
