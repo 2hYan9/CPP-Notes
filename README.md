@@ -9,7 +9,7 @@ The file [C++ Primer Plus I.md](./C++%20Primer%20Plus.%20I.md) is mainly introdu
 - CH03: Basic variable types and the *const* identifier 
 - CH04: Complex variable types and some storage types  
 
-The file [C++ Primer Plus II.md](./C++%20Primer%20Plus.%20II.md) talks about some feature of the C++. Contains these following contents:
+The file [C++ Primer Plus II.md](./C++%20Primer%20Plus.%20II.md) talks about some features of the C++. Contains these following contents:
 - CH05: Read input by 'cin' object and loop structure & traverse a range in a loop structure
 - CH06: Some simple file I/O cases
 - CH07: Take array or pointer as arguement in Function
