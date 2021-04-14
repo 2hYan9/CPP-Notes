@@ -6,5 +6,5 @@ the notes [C++ Primer Plus I.md](https://github.com/TheFuture1sNow/CPP-Primer-Pl
 - CH00: Some knowledge about complation process
 - CH01: OOP concept
 - CH02: A brief introduction about function definition and namespace in C++
-- CH03: Some basic variable types and the *const* identifier 
-- CH04: Some complex variable types and some storage types
+- CH03: Basic variable types and the *const* identifier 
+- CH04: Complex variable types and some storage types
