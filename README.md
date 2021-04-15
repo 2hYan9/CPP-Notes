@@ -2,7 +2,7 @@
 The reading notes of the *C++ Primer Plus*  
 reader of this notes require some C foundation,  
 and this notes may be helpful for those who get in touch with OOP(object-oriented programing) for the first time.  
-The file [C++ Primer Plus I.md](./C++%20Primer%20Plus.%20I.md) mainly introduce some basic knowledge of C++, and contains these following contents:
+The file [C++ Primer Plus I.md](./C++%20Primer%20Plus.%20I.md) mainly introduce some basic knowledge of C++, containing these following contents:
 - CH00: Some knowledge about complation process
 - CH01: OOP concept
 - CH02: A brief introduction about function definition and namespace in C++
