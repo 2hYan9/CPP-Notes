@@ -17,9 +17,9 @@ The file [C++ Primer Plus II.md](./C++%20Primer%20Plus.%20II.md) talks about som
 - CH09: The storage model in C++, and some details about namespace
 
 The file [C++ Primer Plus III.md](./C++%20Primer%20Plus.%20III.md) is mainly about the C++ classes:
-- CH10:
-- CH11:
-- CH12:
-- CH13:
-- CH14:
+- CH10: Some basic knowledge about C++ classes
+- CH11: Operator reloading(friendship) & type conversion in C++ classes
+- CH12: Dynamic memory allocation in C++ classes
+- CH13: Inheritance for C++ classes, virtual member function in classes and Abstract bases class
+- CH14: Talking about the has-a relationship between classes and class template
 
