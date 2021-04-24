@@ -1881,7 +1881,7 @@ stu引用无法自动转换为string引用，==因为在私有继承中，未进
 
 这里通过一个祖先相同的MI例子来介绍解决这些问题的方法：
 
-![祖先相同的MI](C:\Users\19021\Pictures\MI.png)
+![祖先相同的MI](./SomePictures/MI.png)
 
 先定义一个抽象基类Worker，然后由这个抽象基类派生出另外两个类Singer和Waiter，然后再利用这两个派生出的类使用多重继承派生出SingingWaiter类。
 
