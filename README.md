@@ -16,12 +16,12 @@ The file "C++ Primer Plus II.md" talks about some features of the C++. Contains 
 - [CH08](./C++%20Primer%20Plus.%20II.md#ch08): Some advanced knowledge about the function in C++
 - [CH09](./C++%20Primer%20Plus.%20II.md#ch09): The storage model in C++, and some details about namespace
 
-The file [C++ Primer Plus III.md](./C++%20Primer%20Plus.%20III.md) is mainly about the C++ classes:
-- CH10: Some basic knowledge about C++ classes
-- CH11: Operator reloading(friendship) & type conversion in C++ classes
-- CH12: Dynamic memory allocation in C++ classes
-- CH13: Inheritance for C++ classes, virtual member function in classes and Abstract bases class
-- CH14: Talking about the "has-a" relationship, mutiple inheritance and class template
+The file "C++ Primer Plus III.md" is mainly about the C++ classes:
+- [CH10](./C++%20Primer%20Plus.%20III.md#ch10): Some basic knowledge about C++ classes
+- [CH11](./C++%20Primer%20Plus.%20III.md#ch11): Operator reloading(friendship) & type conversion in C++ classes
+- [CH12](./C++%20Primer%20Plus.%20III.md#ch12): Dynamic memory allocation in C++ classes
+- [CH13](./C++%20Primer%20Plus.%20III.md#ch13): Inheritance for C++ classes, virtual member function in classes and Abstract bases class
+- [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
 
 ref.  
 [C++ reference](http://www.cplusplus.com/reference/)
