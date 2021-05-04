@@ -20,7 +20,7 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH10](./C++%20Primer%20Plus.%20III.md#ch10): Some basic knowledge about C++ classes
 - [CH11](./C++%20Primer%20Plus.%20III.md#ch11): Operator reloading(friendship) & type conversion in C++ classes
 - [CH12](./C++%20Primer%20Plus.%20III.md#ch12): Dynamic memory allocation in C++ classes
-- [CH13](./C++%20Primer%20Plus.%20III.md#ch13): Inheritance for C++ classes, virtual member function in classes and Abstract bases class
+- [CH13](./C++%20Primer%20Plus.%20III.md#ch13): Inheritance for C++ classes, virtual member function and Abstract bases class
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
 
 ref.  
