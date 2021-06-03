@@ -23,5 +23,9 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH13](./C++%20Primer%20Plus.%20III.md#ch13): Inheritance for C++ classes, virtual member function and Abstract bases class
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
 
+Extension: Thread Programing in C++ 11  
+
+
 ref.  
-[C++ reference](http://www.cplusplus.com/reference/)
+[cplusplus.com](http://www.cplusplus.com/reference/)
+[cppreference.com](https://en.cppreference.com/w/)
