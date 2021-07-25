@@ -27,6 +27,10 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 ### Extension: Multiple Thread Programing in C++ 11  
 Let's talk about the concept of mutiple thread.  
 
+>A thread is a path of execution within a process. A process can contain multiple threads.  
+>A thread is also known as lightweight process. The idea is to achieve parallelism by dividing a process into multiple threads. For example, in a browser, multiple tabs can be different threads. MS Word uses multiple threads: one thread to format the text, another thread to process inputs, etc.  
+>From [Geeksforgeeks.org](https://www.geeksforgeeks.org/thread-in-operating-system/)
+
 #### Create mutiple thread
 The following instance shows how to create mutiple thread in a process using the "pthread.h" library:  
 ```c++
@@ -81,10 +85,12 @@ int pthread_create(pthread_t *restrict thread,
 
 If the start_routine returns, the effect shall be as if there was an implicit call to pthread_exit() using the return value of start_routine as the exit status.
 
-And the return value of `pthread_create()` is zero if the process create a thread successfully. Otherwise, it will return coresponding error code.  
+And the return value of `pthread_create()` is zero if the process create a thread successfully. Otherwise, it will return the coresponding error code.  
 
 #### Pass arguments to thread
-Process can pass some arguments to thread using the `void * arg` of the function `pthread_create`
+Process can pass some arguments to thread using the `void * arg` of the function `pthread_create`  
+The following instance shows a process how to pass arguments to thread:  
+
 
 ref.  
 [cplusplus.com](http://www.cplusplus.com/reference/)  
