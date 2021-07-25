@@ -66,7 +66,7 @@ Hello World!Hello World!Hello World!
 ```
 it will get different result for different running.  
 
-There, the function `pthread_create` is used to create threads, and the prototype is as followed:  
+The function `pthread_create` is used to create threads, and the prototype is as followed:  
 ```c++
 int pthread_create(pthread_t *restrict thread,
                           const pthread_attr_t *restrict attr,
@@ -81,8 +81,10 @@ int pthread_create(pthread_t *restrict thread,
 
 If the start_routine returns, the effect shall be as if there was an implicit call to pthread_exit() using the return value of start_routine as the exit status.
 
-And the return value of `pthread_create()` is zero if the process create a thread successfully.  
+And the return value of `pthread_create()` is zero if the process create a thread successfully. Otherwise, it will return coresponding error code.  
 
+#### Pass arguments to thread
+Process can pass some arguments to thread using the `void * arg` of the function `pthread_create`
 
 ref.  
 [cplusplus.com](http://www.cplusplus.com/reference/)  
