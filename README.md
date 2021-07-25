@@ -25,6 +25,63 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
 
 ### Extension: Multiple Thread Programing in C++ 11  
+Let's talk about the concept of mutiple thread.  
+
+#### Create mutiple thread
+The following instance shows how to create mutiple thread in a process using the "pthread.h" library:  
+```c++
+#include <iostream>
+#include <pthread.h>
+
+using namespace std;
+
+#define NUM_THREADS 5
+
+void * PrintHello(void * threadid){
+    cout << "Hello World!" << endl;
+    pthread_exit(NULL);
+}
+
+int main(){
+    pthread_t threads[NUM_THREADS];
+
+    for(int i = 0; i < NUM_THREADS; i++){
+        int ret = pthread_create(&threads[i], NULL, PrintHello, NULL);
+        if(ret != 0)
+            cout << "Pthread_create error : error code = " << ret << endl;
+    }
+
+    pthread_exit(NULL);
+}
+```
+
+and the runing result is like this:  
+```
+Hello World!Hello World!
+
+Hello World!Hello World!Hello World!
+
+
+
+```
+it will get different result for different running.  
+
+There, the function `pthread_create` is used to create threads, and the prototype is as followed:  
+```c++
+int pthread_create(pthread_t *restrict thread,
+                          const pthread_attr_t *restrict attr,
+                          void *(*start_routine)(void *),
+                          void *restrict arg);
+```
+> the key word "restrict" is a qualifier used to optimize the process of compiling.  
+  
+- `pthread_t * restrict thread`: the identifier of the current thread
+- `const pthread_attr_t * restrict attr`: points to a pthread_attr_t structure whose contents are used at thread creation time to determine attributes for the new thread;  
+- `void *(*start_routine)(void *)` and `void * restrict arg`: The thread is created executing start_routine with arg as its sole argument.  
+
+If the start_routine returns, the effect shall be as if there was an implicit call to pthread_exit() using the return value of start_routine as the exit status.
+
+And the return value of `pthread_create()` is zero if the process create a thread successfully.  
 
 
 ref.  
