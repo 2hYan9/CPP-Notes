@@ -58,7 +58,7 @@ int main(){
     pthread_exit(NULL);
 }
 ```
-
+compilie with -lpthread
 and the runing result is like this:  
 ```
 Hello World!Hello World!
@@ -90,6 +90,57 @@ And the return value of `pthread_create()` is zero if the process create a threa
 #### Pass arguments to thread
 Process can pass some arguments to thread using the `void * arg` of the function `pthread_create`  
 The following instance shows a process how to pass arguments to thread:  
+```c++
+#include <iostream>
+#include <pthread.h>
+#include <cstring>
+#include <cstdlib>
+
+#define NUM 3
+
+using namespace std;
+
+struct ThreadData{
+    int threadID;
+    char string[60];
+};
+
+void * printMessage(void * threadarg){
+    ThreadData * args = (ThreadData *)threadarg;
+    cout << "Thread ID is: " << args -> threadID << endl;
+    cout << "Message is: " << args -> string << endl;
+    delete args;
+    return 0;
+}
+
+int main(){
+    int ret;
+    pthread_t thread[NUM];
+    for(int i = 0; i < NUM; i++){
+        ThreadData * data = new ThreadData;
+        data -> threadID = i;
+        strcpy(data -> string, "This is message.");
+        ret = pthread_create(&thread[i], NULL, printMessage, data);
+        if(ret){
+            cout << "Failed to create thread.\n";
+            exit(-1);
+        }
+    }
+    pthread_exit(NULL);
+    return 0;
+}
+```
+
+and the output is as followed:
+```
+Thread ID is: Thread ID is: 1Thread ID is: 02
+
+
+Message is: Message is: Message is: This is message.This is message.This is message.
+
+```
+As mentioned above, it will gets different output for different runing.
+#### Join&Detach the threads
 
 
 ref.  
