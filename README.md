@@ -58,7 +58,7 @@ int main(){
     pthread_exit(NULL);
 }
 ```
-compilie with -lpthread
+compile with -lpthread
 and the runing result is like this:  
 ```
 Hello World!Hello World!
@@ -142,7 +142,88 @@ Message is: Message is: Message is: This is message.This is message.This is mess
 As mentioned above, it will gets different output for different runing.
 #### Join&Detach the threads
 
+Join a thread means block the process for the thread to terminate.  
+Based on the instance of passing argument to a thread, here is an example of joining a thread:
+```c++
+#include <iostream>
+#include <pthread.h>
+#include <cstring>
+#include <cstdlib>
+#include <unistd.h>
+
+#define NUM 3
+
+using namespace std;
+
+struct ThreadData{
+    int threadID;
+    char string[60];
+};
+
+void * printMessage(void * threadarg){
+    ThreadData * args = (ThreadData *)threadarg;
+    cout << "Thread ID is: " << args -> threadID << endl;
+    printf("The message is: %s\n", args -> string);
+    delete args;
+    return 0;
+}
+
+int main(){
+    int ret, rc;
+    pthread_t thread[NUM];
+    pthread_attr_t attr;
+    void *status;
+
+    //initialize the thread as joinable
+    pthread_attr_init(&attr);
+    pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
+
+    for(int i = 0; i < NUM; i++){
+        ThreadData * data = new ThreadData;
+        data -> threadID = i;
+        strcpy(data -> string, "This is message.");
+        ret = pthread_create(&thread[i], NULL, printMessage, data);
+        if(ret){
+            cout << "Failed to create thread.\n";
+            exit(-1);
+        }
+        rc = pthread_join(thread[i], &status);
+        if(rc){
+            cout << "Failed to join" << endl;
+            exit(-1);
+        }
+    }
+
+    //Clear the attribution
+    pthread_attr_destroy(&attr);
+    
+    pthread_exit(NULL);
+    return 0;
+}
+```
+and the output is
+```
+Thread ID is: 0
+The message is: This is message.
+Thread ID is: 1
+The message is: This is message.
+Thread ID is: 2
+The message is: This is message.
+
+```
+It's clearly to tell the difference with the output of the last instance.
+To join a thread, the listed method are required:
+- `int pthread_join(pthread_t thread, void **retval)`: This method waits for the thread specified by thread to terminate. If that thread has already terminated, then pthread_join() returns immediately. The thread specified by thread must be joinable. This method will returns 0 on success. Otherwise, it will returns the coresponding error code.
+- `int pthread_attr_init(pthread_attr_t *attr)` and `int pthread_attr_destroy(pthread_attr_t *attr)`: The pthread_attr_init() method initializes the thread attributes object pointed by the attr. After this call, indivadual attributes of the object can be set using various related functions and then the object can be used in one or more pthread_create calls that create threads. When a thread attributes object is no longer required, it should be destroyed using the pthread_attr_destroy() function. Destroying a thread attributes object has no effect on threads that were created using that object.
+- `int pthread_attr_setdetachstate(const pthread_attr_t *attr, int *detachstate)`: This method sets the detach state attribute of the thread attributes object referred to by attr to the value specified in detachstate. The detach state attribute determine whether a thread created using the thread attributes object attr will be created in a joinable(PTHREAD_CREATED_JOINABLE) a detachd(PTHREAD_CREATED_DETACH) state. 
+
+Detach a thread means that the thread of excution is "detached" from the thread object an is no longer represented by a thread object. The C++ thread object can be destroyed and the OS thread of excution can continue on. If the program needs to know when that thread of excution has completed, some other mechanism needs to be used. The pthread_join() method can not be called on that thread object anymore, since it is no longer associated with a thread of excution.
+
+To detach a thread, the pthread_detach() should be called on:
+`int pthread_detach(pthread_t thread)`: This method marks the thread identified by thread as detached. When a detached thread terminates, its resources are automatically released back to the system without the need for another thread to join with the terminated thread. It will returns 0 on success. Otherwise, it returns the corresponding error code.
 
 ref.  
+*C++ Primer Plus*
+[man7.org](https://man7.org/index.html)
 [cplusplus.com](http://www.cplusplus.com/reference/)  
 [cppreference.com](https://en.cppreference.com/w/)
