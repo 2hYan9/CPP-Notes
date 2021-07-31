@@ -224,7 +224,7 @@ To detach a thread, the pthread_detach() should be called on:
 `int pthread_detach(pthread_t thread)`: This method marks the thread identified by thread as detached. When a detached thread terminates, its resources are automatically released back to the system without the need for another thread to join with the terminated thread. It will returns 0 on success. Otherwise, it returns the corresponding error code.
 
 ref.  
-*C++ Primer Plus*
-[man7.org](https://man7.org/index.html)
+*C++ Primer Plus*  
+[man7.org](https://man7.org/index.html)  
 [cplusplus.com](http://www.cplusplus.com/reference/)  
 [cppreference.com](https://en.cppreference.com/w/)
