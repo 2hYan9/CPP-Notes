@@ -2,6 +2,7 @@
 The reading notes of the *C++ Primer Plus*  
 reader of this notes require some C foundation,  
 and this notes may be helpful for those who get in touch with OOP(object-oriented programing) for the first time.  
+Note: All these files are written in Chinese.  
 ### Some Basic Knowledge of the C++  
 The file "C++ Primer Plus I.md" mainly introduce some basic knowledge of C++, containing these following contents:
 - [CH00](./C++%20Primer%20Plus.%20I.md#ch00): Some knowledge about complation process
