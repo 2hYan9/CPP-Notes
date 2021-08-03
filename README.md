@@ -25,7 +25,7 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH13](./C++%20Primer%20Plus.%20III.md#ch13): Inheritance for C++ classes, virtual member function and Abstract bases class
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
 
-### Extension: Multiple Thread Programing in C++ 11  
+### Extension I: Multiple Thread Programing in C++ 11  
 Let's talk about the concept of mutiple thread.  
 
 >A thread is a path of execution within a process. A process can contain multiple threads.  
