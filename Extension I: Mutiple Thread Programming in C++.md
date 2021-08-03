@@ -5,6 +5,7 @@ Let's talk about the concept of mutiple thread.
 >A thread is also known as lightweight process. The idea is to achieve parallelism by dividing a process into multiple threads. For example, in a browser, multiple tabs can be different threads. MS Word uses multiple threads: one thread to format the text, another thread to process inputs, etc.  
 >From [Geeksforgeeks.org](https://www.geeksforgeeks.org/thread-in-operating-system/)
 
+<span id="create_thread"></span>
 #### Create mutiple thread
 The following instance shows how to create mutiple thread in a process using the "pthread.h" library:  
 ```c++
@@ -195,4 +196,7 @@ Detach a thread means that the thread of excution is "detached" from the thread 
 
 To detach a thread, the pthread_detach() should be called on:  
 `int pthread_detach(pthread_t thread)`: This method marks the thread identified by thread as detached. When a detached thread terminates, its resources are automatically released back to the system without the need for another thread to join with the terminated thread. It will returns 0 on success. Otherwise, it returns the corresponding error code.
+
+<span id="thread_class"></span>
+#### Mutilple thread in C++ Classes
 
