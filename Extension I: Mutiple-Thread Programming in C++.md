@@ -1,4 +1,4 @@
-### Extension I: Mutiple Thread Programming in C++
+### Extension I: Mutiple-Thread Programming in C++
 Let's talk about the concept of mutiple thread.  
 
 >A thread is a path of execution within a process. A process can contain multiple threads.  
