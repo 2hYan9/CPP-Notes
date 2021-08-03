@@ -26,7 +26,7 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
 
 ### Extension I: Multiple Thread Programing in C++  
-Some concept are introduced to explain how to realize mutiple thread programming in C++ in the file named "Extension I: Mutiple Thread Programming in C++", and the contents of this file are listed blow:  
+Some concept are introduced to explain how to realize mutiple thread programming in C++ in the file named "Extension I: Mutiple Thread Programming in C++", and the contents of this file are listed below:  
 
 
 
