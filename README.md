@@ -25,8 +25,13 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH13](./C++%20Primer%20Plus.%20III.md#ch13): Inheritance for C++ classes, virtual member function and Abstract bases class
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
 
-### Extension I: Multiple Thread Programing in C++  
-Some concept are introduced to explain how to realize mutiple thread programming in C++ in the file named "Extension I: Mutiple Thread Programming in C++", and the contents of this file are listed below:  
+### Extension I: Multiple-Thread Programing in C++  
+Some concept are introduced to explain how to realize mutiple-thread programming in C++ in the file named "Extension I: Mutiple-Thread Programming in C++", and the contents of this file are listed below:  
+- [create mutiple threads](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#create_thread): Introduce the "pthread.h" library, which provides the procedural method to realize mutiple-thread programming.  
+- [thread class](./Extension%20I:%20Mutiple%20Thread%20Programming%20in%20C++.md#thread_class): The thread class are introduced to realize the mutiple-thread programming in a object-oriented method
+
+### Extension II: Network Programming in Unix
+
 
 
 
