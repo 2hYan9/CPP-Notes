@@ -199,4 +199,4 @@ To detach a thread, the pthread_detach() should be called on:
 
 <span id="thread_class"></span>
 #### Mutilple thread in C++ Classes
-
+see [cppreference.com](https://en.cppreference.com/w/cpp/thread)
