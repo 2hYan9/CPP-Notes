@@ -199,9 +199,112 @@ To detach a thread, the pthread_detach() should be called on:
 
 <span id="thread_class"></span>
 #### Mutilple thread in C++ Classes
-C++ includes built-in support for threads, which defined in the header /<thread/>.  
+C++ includes built-in support for threads, which defined in the header \<thread\>.  
 在这个头文件中，包含有`thread`类，`jthread`类以及`thread::id`类，而这里主要讨论`thread`类。  
 thread类表示一个正在执行中的线程，而多线程能够允许程序能够同时执行多个函数。  
 每当创建一个`thread`类的对象后，与这个`thread`类相关联的线程就立即开始执行，而创建一个`thread`类的对象时需要提供一个函数作为参数，而这个函数就是与这个类相关联的线程需要执行的函数。当这个函数返回时或者抛出一个异常时，将会调用`std::terminate`。这个函数可以通过`std::promise`方法修改共享变量来将自己的返回值或者异常传递给创建这个线程的父线程，而这些内容可以或涉及到同步和互斥。  
-`thread`类的对象
+正如前面提到过的一样，`std::thread`类的对象可能会处于一种不代表任何线程的状态（一般是以下情况：默认构造器构造，move from，detach或者join），而一个正在执行中的线程可能也并不会与一个`std::thread`类的对象相关联。  
+需要注意的是，不可能存在两个不同的`std::thread`类的对象会与同一个线程相关联，这是因为`std::thread`类是不可复制构造或者复制赋值的。  
+Synopsis of `thread` class：
+```c++
+class thread {
+    public:
+    // types
+    class id;
+    using native_handle_type = /* implementation-defined */;
+ 
+    // construct/copy/destroy
+    thread() noexcept;
+    template<class F, class... Args> explicit thread(F&& f, Args&&... args);
+    ~thread();
+    thread(const thread&) = delete;
+    thread(thread&&) noexcept;
+    thread& operator=(const thread&) = delete;
+    thread& operator=(thread&&) noexcept;
+ 
+    // members
+    void swap(thread&) noexcept;
+    bool joinable() const noexcept;
+    void join();
+    void detach();
+    id get_id() const noexcept;
+    native_handle_type native_handle();
+ 
+    // static members
+    static unsigned int hardware_concurrency() noexcept;
+  };
+```
+下面的这个实例演示了如何通过`std::thread`类实现多线程开发：
+```c++
+#include <iostream>
+#include <utility>
+#include <thread>
+#include <chrono>
+
+void f1(int n){
+    for(int i = 0; i < 5; i++){
+        std::cout << "Thread 1 execution." << std::endl;
+        n++;
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    }
+}
+
+void f2(int &n){
+    for(int i = 0; i < 5; i++){
+        std::cout << "Thread 2 execution." << std::endl;
+        n++;
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+    }
+}
+
+class foo{
+    public:
+    void bar(){
+        for(int i = 0; i < 5; i++){
+            std::cout << "Thread 3 execution." << std::endl;
+            n++;
+            std::this_thread::sleep_for(std::chrono::milliseconds(10));
+        }
+    }
+    int n = 0;
+};
+
+int main(){
+    int n = 0;
+    foo f;
+    std::thread t1;                     //t1 is not associated with any thread
+    std::thread t2(f1, n + 1);          //pass by value
+    std::thread t3(f2, std::ref(n));    //pass by reference
+    std::thread t4(std::move(t3));      //t4 is now running f2(), and t3 is no longer a thread
+    std::thread t5(&foo::bar, &f);      //t4 runs foo::bar() on object f
+    t2.join();
+    t4.join();
+    t5.join();
+    std::cout << "Final value of n is " << n << std::endl;
+    std::cout << "Final value of f.n (foo::n) is " << f.n << std::endl;
+    return 0;
+}
+```
+这个实例的演示结果如下所示：
+```
+Thread 1 execution.Thread 2 execution.
+
+Thread 3 execution.
+Thread 2 execution.
+Thread 3 execution.
+Thread 1 execution.
+Thread 2 execution.
+Thread 3 execution.
+Thread 1 execution.
+Thread 3 execution.
+Thread 1 execution.
+Thread 2 execution.
+Thread 3 execution.
+Thread 1 execution.
+Thread 2 execution.
+Final value of n is 5
+Final value of f.n (foo::n) is 5
+```
+每次运行都会得到不同的结果。
+
 See moer details on [cppreference.com](https://en.cppreference.com/w/cpp/thread)  
