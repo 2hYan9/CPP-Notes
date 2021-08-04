@@ -199,4 +199,9 @@ To detach a thread, the pthread_detach() should be called on:
 
 <span id="thread_class"></span>
 #### Mutilple thread in C++ Classes
-see [cppreference.com](https://en.cppreference.com/w/cpp/thread)
+C++ includes built-in support for threads, which defined in the header /<thread/>.  
+在这个头文件中，包含有`thread`类，`jthread`类以及`thread::id`类，而这里主要讨论`thread`类。  
+thread类表示一个正在执行中的线程，而多线程能够允许程序能够同时执行多个函数。  
+每当创建一个`thread`类的对象后，与这个`thread`类相关联的线程就立即开始执行，而创建一个`thread`类的对象时需要提供一个函数作为参数，而这个函数就是与这个类相关联的线程需要执行的函数。当这个函数返回时或者抛出一个异常时，将会调用`std::terminate`。这个函数可以通过`std::promise`方法修改共享变量来将自己的返回值或者异常传递给创建这个线程的父线程，而这些内容可以或涉及到同步和互斥。  
+`thread`类的对象
+See moer details on [cppreference.com](https://en.cppreference.com/w/cpp/thread)  
