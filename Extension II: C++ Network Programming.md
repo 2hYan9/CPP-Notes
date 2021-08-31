@@ -1,6 +1,7 @@
 ### Extension II: C++ Network Programming
 
 #### Introduction
+<span id ="introduction"></span>
 **Protocol**: An agreement on how the programs that communicate across a computer network will communicate, and high-level decisions must be made about which program is expected to initiate communication and when responses are expected.  
   
 For example, a Web server is typically thought of as a long-running program that sends network message only in response to requsts coming in from the network. The other side of the protocol is a Web client, such as a browser, which always initiates communication with the server. This organization into client and server is used by most network-aware applications.  
@@ -15,6 +16,7 @@ In the client and server organization, server forms the listener socket while cl
 ![Server_and_client](./SomePictures/Socket_server.png)
   
 #### Socket Programming
+<span id = "socket"></span>
 Server-side states:  
 - _Create socket_: `int sockfd = socket(int domain, int type, int protocol);`  
   > `sockfd`: socket descriptor, like a file-handle, is an integer  
@@ -56,6 +58,7 @@ Client-side states:
 Visit [sys_socket.h(0p) - Linux manual page](https://man7.org/linux/man-pages/man0/sys_socket.h.0p.html) for more details.  
   
 #### Implementation  
+<span id = "implementation"></span>
 Here is an example copy from [Socket Programming in C/C++ - GeeksforGeeks](https://www.geeksforgeeks.org/socket-programming-cc/) of exchaning one hello message between server and client to demonstrate the client and server organization.  
 Server-side code:  
 ```c
