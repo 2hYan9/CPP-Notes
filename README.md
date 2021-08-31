@@ -24,17 +24,20 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH12](./C++%20Primer%20Plus.%20III.md#ch12): Dynamic memory allocation in C++ classes
 - [CH13](./C++%20Primer%20Plus.%20III.md#ch13): Inheritance for C++ classes, virtual member function and Abstract bases class
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
-
+  
 ### Extension I: Multiple-Thread Programing in C++  
 Some concept are introduced to explain how to realize mutiple-thread programming in C++ in the file named "Extension I: Mutiple-Thread Programming in C++", and the contents of this file are listed below:  
 - [create mutiple threads](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#create_thread): Introduce the "pthread.h" library, which provides the procedural method to realize mutiple-thread programming.  
-- [thread class](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#thread_class): The thread class are introduced to realize the mutiple-thread programming in a object-oriented method
-
+- [thread class](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#thread_class): The thread class are introduced to realize the mutiple-thread programming in a object-oriented method.
+  
 ### Extension II: C++ Network Programming  
-
-
+- [Introduction](./Extension%20II:%20C++%20Network%20Programming.md#introduction): Some concepts about the network programming and the scoket programming.  
+- [Socket Programming](./Extension%20II:%20C++%20Network%20Programming.md#socket): Introdution of socket programming.  
+- [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): An example of Socket programming.  
+  
 ref.  
 *C++ Primer Plus*  
-[man7.org](https://man7.org/index.html)  
-[cplusplus.com](http://www.cplusplus.com/reference/)  
-[cppreference.com](https://en.cppreference.com/w/)
+[Michael Kerrisk - man7.org](https://man7.org/index.html)  
+[GeeksforGeeks | A computer science portal for geeks](https://www.geeksforgeeks.org/)  
+[cppreference.com](https://en.cppreference.com/w/)  
+[Reference - C++ Reference](http://www.cplusplus.com/reference/)
