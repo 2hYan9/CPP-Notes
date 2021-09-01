@@ -26,17 +26,17 @@ The file "C++ Primer Plus III.md" is mainly about the C++ classes:
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): Talking about the "has-a" relationship, mutiple inheritance and class template
   
 ### Extension I: Multiple-Thread Programing in C++  
-Some concept are introduced to explain how to realize mutiple-thread programming in C++ in the file named "Extension I: Mutiple-Thread Programming in C++", and the contents of this file are listed below:  
+Some concepts are introduced to explain how to realize multiple-thread programming in C++ in the file named "Extension I: Multiple-Thread Programming in C++", and the contents of this file are listed below:  
 - [create mutiple threads](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#create_thread): Introduction to the "pthread.h" library, which provides the procedural method to realize mutiple-thread programming.  
 - [thread class](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#thread_class): The thread class are introduced to realize the mutiple-thread programming in a object-oriented method.
   
 ### Extension II: C++ Network Programming  
-- [Introduction](./Extension%20II:%20C++%20Network%20Programming.md#introduction): Some concepts about the network programming and the scoket programming.  
-- [Socket Programming](./Extension%20II:%20C++%20Network%20Programming.md#socket): Introdution to socket programming.  
+- [Introduction](./Extension%20II:%20C++%20Network%20Programming.md#introduction): Some concepts about network programming and socket programming.  
+- [Socket Programming](./Extension%20II:%20C++%20Network%20Programming.md#socket): Introduction to socket programming.  
 - [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): An example of socket programming.  
   
 ### Extension III: Introduction to Docker
-Docker is a set of platform as a service (PaaS) products that use the operating system level visualization to delivers software in pakage called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files. 
+Docker is a set of Platform as a Service (PaaS) products that use the operating system level visualization to deliver software in package called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files. 
   
 ref.  
 *C++ Primer Plus*  
