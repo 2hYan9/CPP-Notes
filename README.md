@@ -36,7 +36,7 @@ Some concept are introduced to explain how to realize mutiple-thread programming
 - [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): An example of socket programming.  
   
 ### Extension III: Introduction to Docker
-Docker is a set of platform as a service (PaaS) products that use the operating system level visualization to deliver software in pakage called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files. 
+Docker is a set of platform as a service (PaaS) products that use the operating system level visualization to delivers software in pakage called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files. 
   
 ref.  
 *C++ Primer Plus*  
