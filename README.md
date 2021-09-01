@@ -32,8 +32,11 @@ Some concept are introduced to explain how to realize mutiple-thread programming
   
 ### Extension II: C++ Network Programming  
 - [Introduction](./Extension%20II:%20C++%20Network%20Programming.md#introduction): Some concepts about the network programming and the scoket programming.  
-- [Socket Programming](./Extension%20II:%20C++%20Network%20Programming.md#socket): Introdution of socket programming.  
-- [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): An example of Socket programming.  
+- [Socket Programming](./Extension%20II:%20C++%20Network%20Programming.md#socket): Introdution to socket programming.  
+- [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): An example of socket programming.  
+  
+### Extension III: Introduction to Docker
+
   
 ref.  
 *C++ Primer Plus*  
