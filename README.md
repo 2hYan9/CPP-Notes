@@ -35,10 +35,6 @@ Some concepts are introduced to explain how to realize multiple-thread programmi
 - [Socket Programming](./Extension%20II:%20C++%20Network%20Programming.md#socket): Introduction to socket programming.  
 - [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): An example of socket programming.  
   
-### Extension III: Introduction to Docker
-Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.  
-Docker is a set of Platform as a Service (PaaS) products that use the operating system level visualization to deliver software in package called containers. Docker provides the ability to package and run an application in a loosely isolated environment called a container. The isolation and security allow you to run many containers simultaneously on a given host. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host. You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.
-  
 ref.  
 *C++ Primer Plus*  
 [Michael Kerrisk - man7.org](https://man7.org/index.html)  
