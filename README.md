@@ -1,7 +1,7 @@
 # C++-Primer-Plus-notes
 The reading notes of the *C++ Primer Plus*  
-reader of this notes require some C foundation,  
-and this notes may be helpful for those who get in touch with OOP(object-oriented programing) for the first time.  
+reader of these notes require some C foundation,  
+and these notes may be helpful for those who get in touch with OOP(object-oriented programing) for the first time.  
 Note: All these files are written in Chinese.  
 ### Some Basic Knowledge of the C++  
 The file "C++ Primer Plus I.md" mainly introduce some basic knowledge of C++, containing these following contents:
