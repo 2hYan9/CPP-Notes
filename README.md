@@ -1,12 +1,11 @@
 # C++-Primer-Plus-notes
-The reading notes of the *C++ Primer Plus*  
-reader of these notes require some C foundation,  
-and these notes may be helpful for those who get in touch with OOP(object-oriented programing) for the first time.  
-Note: All these files are written in Chinese.  
+阅读 *C++ Primer Plus* 时的一些笔记  
+在阅读这篇笔记之前需要读者具有一定的编程基础，最好是C语言相关的基础知识，  
+当然，这篇文档对于第一次接触OOP(Object Oriented Programming)的读者会有一定的帮助。
 ### Some Basic Knowledge of the C++  
-The file "C++ Primer Plus I.md" mainly introduce some basic knowledge of C++, containing these following contents:
-- [CH00](./C++%20Primer%20Plus.%20I.md#ch00): Some knowledge about complation process
-- [CH01](./C++%20Primer%20Plus.%20I.md#ch01): OOP concept
+文件"C++ Primer Plus I.md" 主要介绍一些C++的基础知识，目录如下：
+- [CH00](./C++%20Primer%20Plus.%20I.md#ch00): 介绍一些编译过程相关的基础内容
+- [CH01](./C++%20Primer%20Plus.%20I.md#ch01): 面向对象编程的基本概念
 - [CH02](./C++%20Primer%20Plus.%20I.md#ch02): A brief introduction about function definition and namespace in C++
 - [CH03](./C++%20Primer%20Plus.%20I.md#ch03): Basic variable types and the *const* identifier 
 - [CH04](./C++%20Primer%20Plus.%20I.md#ch04): Some complex types, new & delete operator, and storage types  
