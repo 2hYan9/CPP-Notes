@@ -6,9 +6,9 @@
 文件"C++ Primer Plus I.md" 主要介绍一些C++的基础知识，目录如下：
 - [CH00](./C++%20Primer%20Plus.%20I.md#ch00): 介绍一些编译过程相关的基础内容
 - [CH01](./C++%20Primer%20Plus.%20I.md#ch01): 面向对象编程的基本概念
-- [CH02](./C++%20Primer%20Plus.%20I.md#ch02): A brief introduction about function definition and namespace in C++
-- [CH03](./C++%20Primer%20Plus.%20I.md#ch03): Basic variable types and the *const* identifier 
-- [CH04](./C++%20Primer%20Plus.%20I.md#ch04): Some complex types, new & delete operator, and storage types  
+- [CH02](./C++%20Primer%20Plus.%20I.md#ch02): 对C++中的命名空间(namespace)和简单函数的定义进行简单介绍
+- [CH03](./C++%20Primer%20Plus.%20I.md#ch03): C++的一些内置(built-in)变量类型以及 "const"限定符 
+- [CH04](./C++%20Primer%20Plus.%20I.md#ch04): 一些比较复杂的变量类型（数组，字符串，结构体），"new" 和 "delete" 操作符, 以及C++中的存储类型: 自动(local), 静态(global)以及动态的  
 ### More Advanced Freature of C++
 The file "C++ Primer Plus II.md" talks about some features of the C++. Contains these following contents:
 - [CH05](./C++%20Primer%20Plus.%20II.md#ch05): Read input by 'cin' object and loop, structure traverse a range in a loop structure and clock() function  
