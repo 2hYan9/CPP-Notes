@@ -36,7 +36,7 @@
 - [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): 实现套接字编程的一个实例  
   
 ref.  
-*C++ Primer Plus*  
+*C++ Primer Plus, 5th edition*  
 [Michael Kerrisk - man7.org](https://man7.org/index.html)  
 [GeeksforGeeks | A computer science portal for geeks](https://www.geeksforgeeks.org/)  
 [cppreference.com](https://en.cppreference.com/w/)  
