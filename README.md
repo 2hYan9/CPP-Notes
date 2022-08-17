@@ -20,7 +20,7 @@
 文件 "C++ Primer Plus III.md" 中面向对象编程的内容:
 - [CH10](./C++%20Primer%20Plus.%20III.md#ch10): C++ 类(Class)的基本内容：成员访问限定符，this指针，构造器与析构器，类的作用域等
 - [CH11](./C++%20Primer%20Plus.%20III.md#ch11): 类的运算符重载，友元(friendship)，类的类型转换
-- [CH12](./C++%20Primer%20Plus.%20III.md#ch12): C++类的动态内存分配方式，讨论了类的一些特殊成员
+- [CH12](./C++%20Primer%20Plus.%20III.md#ch12): C++类的动态内存分配方式，讨论了类的一些特殊成员以及返回对象
 - [CH13](./C++%20Primer%20Plus.%20III.md#ch13): 类的继承，虚函数，抽象基类(Abstract Bases Classes, ABC)
 - [CH14](./C++%20Primer%20Plus.%20III.md#ch14): 类的"has-a"关系, 多重继承，类模板
   
