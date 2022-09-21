@@ -26,8 +26,8 @@
   
 ### Extension I: Multiple-Thread Programing in C++  
 这个文件主要介绍如何在C++中实现多线程编程:  
-- [create mutiple threads](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#create_thread): 介绍"pthread.h"库文件，这个库文件中提供了一些过程化的多线程方法    
-- [thread class](./Extension%20I:%20Mutiple-Thread%20Programming%20in%20C++.md#thread_class): 使用"std::thread"类实现OOP风格的多线程编程
+- [create mutiple threads](./Extension%20I-Mutiple%20Thread%20Programming%20in%20C%2B%2B.md#create_thread): 介绍"pthread.h"库文件，这个库文件中提供了一些过程化的多线程方法    
+- [thread class](./Extension%20I-Mutiple%20Thread%20Programming%20in%20C%2B%2B.md#thread_class): 使用"std::thread"类实现OOP风格的多线程编程
   
 ### Extension II: C++ Network Programming
 这个文件主要介绍如何在C++中进行网络编程：
