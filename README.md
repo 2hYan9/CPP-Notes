@@ -31,9 +31,9 @@
   
 ### Extension II: C++ Network Programming
 这个文件主要介绍如何在C++中进行网络编程：
-- [Introduction](./Extension%20II:%20C++%20Network%20Programming.md#introduction): 网络编程中的一些基本概念  
-- [Socket Programming](./Extension%20II:%20C++%20Network%20Programming.md#socket): 简述套接字编程  
-- [Implementation](./Extension%20II:%20C++%20Network%20Programming.md#implementation): 实现套接字编程的一个实例  
+- [Introduction](./Extension%20II-C%2B%2B%20Network%20Programming.md#introduction): 网络编程中的一些基本概念  
+- [Socket Programming](./Extension%20II-C%2B%2B%20Network%20Programming.md#socket): 简述套接字编程  
+- [Implementation](./Extension%20II-C%2B%2B%20Network%20Programming.md#implementation): 实现套接字编程的一个实例  
   
 ref.  
 *C++ Primer Plus, 5th edition*  
